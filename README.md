@@ -7,4 +7,4 @@ vim ./setup/defaults.json
 
 python3 ./setup/setup.py
 
-python bot.py
+python3 bot.py
