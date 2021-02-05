@@ -6,7 +6,7 @@ from playhouse.sqlite_ext import *
 
 
 # defines
-db = SqliteExtDatabase('./var/settings.db')
+db = SqliteExtDatabase('../var/settings.db')
 
 
 # classes
@@ -24,7 +24,7 @@ with db:
     db.create_tables([Setting])
 
 # import defaults if necessary
-with open('./setup/defaults.json', 'r') as fp:
+with open('./defaults.json', 'r') as fp:
     defaults = json.load(fp)
     for key in defaults:
         Setting.insert(key=key, value=defaults[key]).on_conflict('IGNORE').execute()
