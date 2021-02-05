@@ -1,0 +1,18 @@
+{
+    "app_token": "",
+    "name": "Bot",
+    "fullname": "Mister Bot",    
+    "desc": "Mister Bot is melancholy",
+    "prefix": ["Bot ", "bot "],
+    "presence_text": "you with mild concern",
+    "presence_type": 3,
+    "owner_id": 0,
+    "server_id": 0,
+    "admin_roles": [0],
+    "chan_general": 0,
+    "chan_logs": 0,
+    "chan_admin": 0,
+    "log_file": "./logs/bot.log",
+    "log_file_size": 200,
+    "cogs": []
+}
